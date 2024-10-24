@@ -1,0 +1,109 @@
+body {
+    background-color: #141414; 
+    color: #fff; 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.navbar {
+    background-color: #000; 
+    padding: 20px; 
+    text-align: center; 
+    font-size: 2em; 
+    letter-spacing: 1px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+}
+
+.container {
+    margin: 20px auto; 
+    width: 90%; 
+    max-width: 1200px; 
+}
+
+.category {
+    margin-bottom: 40px; 
+}
+
+.category h2 {
+    font-size: 2em; 
+    margin-bottom: 10px; 
+}
+
+.series-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px; 
+}
+
+.series-card {
+    background-color: #222; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    transition: transform 0.3s; 
+}
+
+.series-card a {
+    text-decoration: none; 
+    color: #fff; 
+}
+
+.series-card img {
+    width: 100%; 
+    height: auto; 
+}
+
+.series-title {
+    padding: 10px;
+    text-align: center; 
+}
+
+.series-card:hover {
+    transform: scale(1.05);
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.series-card {
+    min-width: 300px; 
+    max-width: 300px; 
+    margin: 0 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}
+
+@media (max-width: 600px) {
+    .series-card {
+        min-width: 100%;
+    }
+}
